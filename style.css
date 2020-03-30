@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+h1, h2 {
+	font-family: Great Vibes;
+}
+
+body {
+  background: url('images/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%; 
+  margin-left: 1.5rem auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+/* =============================
+    HEADER
+=============================*/
+
+.cover {
+  background: url('images/cover.jpg') no-repeat 65% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('images/cover.jpg') no-repeat center/cover;
+  }
+
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.hero-text {
+  margin: 0 auto; //*Középre rendezi a szöveget*//
+  padding: 0.625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+
+.hero-text h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0; 
+}
+
+@media (min-width: 768px) {
+
+  .hero-text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 7rem;
+  }
+
+}
+
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+.tagline::after {       /* Ennek a résznek köszönhető a bemutatkozás utáni vonal amelynek a magassága 1px*/
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {            /* Ennek a résznek köszönhető a dátum előtti, és után vonal amelynek a magassága 1px*/
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 2px;
+  width: 2rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+/* =============================
+    Locations
+=============================*/
+.blurb img {
+  height: 7.5rem;
+
+}
+.blurb h3 {
+  font-weight: 700;
+}
+
+.blurb div {
+  font-family: 'Muli', sans-serif;
+}
+.blurb::after {     /*Vonal az egységek alatt*/
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+@media (min-width: 768px) { /*Itt adjuk meg, hogy 768px-nél nagyobb méretben a blurb-ok egymás mellett helyezkedjenek el, és 30% legyen a szélességük*/
+
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  .blurb::after {       /*Csak mobil nézetben szeretnénk vonalat a burb-ök alatt! egyébkén NEM!*/
+    display: none;
+  }
+}
+  /* =============================
+    Programs
+=============================*/
+.program {
+  width: 100%;
+  text-align: left;
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+.program ul {
+  letter-spacing: .1rem;
+}
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }    
+  
+
+}
+ /* =============================
+    Gifts
+=============================*/
+.gifts {
+  width: 100%;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+.gifts img {
+  height: 8rem;
+}
+.gifts p:last-child {   
+  margin-bottom: 0;
+}
+/* =============================
+    FAQS
+=============================*/
+
+.faq {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  width: 100%;
+  text-align: center;
+}
+.faq h2 {
+  margin-top: 1rem;
+}
+.faq p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+.question-group::after {
+    display: none;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+
+}
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+/* =============================
+
+        FOOTER STYLES
+
+=============================*/
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+footer small {
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  footer {
+    min-height: 7vh;
+  }
+  
+}
