@@ -58,7 +58,7 @@ a:hover {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1081px) {
 
   .cover {
     background: url('images/cover.jpg') no-repeat center/cover;
